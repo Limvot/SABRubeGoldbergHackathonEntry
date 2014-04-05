@@ -1,0 +1,10 @@
+import io;
+import system;
+
+int main() {
+	print("Hello from Kraken!");
+	call("gcc c_shim.c -o c_shim");
+	call("./c_shim");
+	//call(*(argv+1));
+	return 0;
+}

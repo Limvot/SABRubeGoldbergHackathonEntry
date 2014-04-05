@@ -1,0 +1,11 @@
+__if_comp__ __C__ __simple_passthrough__ """
+#include <stdlib.h>
+"""
+
+
+void call(char* toCall) {
+	__if_comp__ __C__ __simple_passthrough__ """
+		system(toCall);
+	"""
+	return;
+}
